@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         // Always call the superclass so it can restore the view hierarchy
         super.onRestoreInstanceState(savedInstanceState);
-        Log.d("Art_Log","MainActivity  onRestoreInstanceState invoked");
+        Log.d("Art_Log", "MainActivity  onRestoreInstanceState invoked");
 
         // Restore state members from saved instance
         myCurrentScore = savedInstanceState.getString(STATE_SCORE_Key);
@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         Log.d("Art_Log", "MainActivity  onStart invoked");
+
     }
 
 
@@ -59,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         Log.d("Art_Log", "MainActivity  onResume invoked");
+
     }
 
     @Override
@@ -66,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
         Log.d("Art_Log", "MainActivity  onPause invoked");
     }
+
 
     @Override
     protected void onSaveInstanceState(Bundle savedInstanceState) {
