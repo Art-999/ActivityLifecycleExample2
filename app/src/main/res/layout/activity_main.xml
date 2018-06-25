@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@android:color/holo_blue_light"
     tools:context="com.example.arturmusayelyan.activitylifecycleexample2.MainActivity">
 
     <TextView
@@ -19,10 +20,20 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <Button
+        android:id="@+id/second_act_btn"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Go to Second"
+        android:textAllCaps="false"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/counter_act_btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Counter"
+        android:textAllCaps="false"
         android:onClick="onClick"/>
     <TextView
         android:layout_width="match_parent"
